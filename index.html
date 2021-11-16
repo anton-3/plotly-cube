@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+        <style>
+            #graph {
+                width: 1000px;
+                height: 700px;
+            }
+            #sidebar {
+                width: 200px;
+                height: 700px;
+                position: fixed;
+                top: 0;
+                left: 1050px;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            <div id="graph"></div>
+            <div id="sidebar">
+                <p><span id="date">May 2018</span></p>
+                <p>PB: <span id="pb"></span></p>
+                <p>Ao100: <span id="ao100"></span></p>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="times.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</html>
