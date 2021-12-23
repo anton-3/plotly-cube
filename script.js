@@ -33,12 +33,26 @@ Plotly.newPlot("graph", [
   },
 ], {
   xaxis: {
+    title: {
+      text: 'time (s)',
+      font: {
+        family: 'Times New Roman, Times, serif',
+        size: 18
+      }
+    },
     type: 'linear',
     range: [0, maxSeconds]
   },
   yaxis: {
+    title: {
+      text: 'number of solves',
+      font: {
+        family: 'Times New Roman, Times, serif',
+        size: 18
+      }
+    },
     type: 'linear',
-    range: [0, 600]
+    range: [0, 650]
   }
 });
 
@@ -105,4 +119,4 @@ function update() {
   setTimeout(update, 100);
 }
 
-requestAnimationFrame(update);
+update();
